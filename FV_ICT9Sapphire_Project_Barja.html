@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ConversionWorld.com</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<style type="text/css">
+		body {
+			background-image: url(prettybg.jpg);
+		}
+
+		table{
+			background-color: #EADDCA;
+			border-radius: 10px;
+			height: 400px;
+			width: 500px;
+		}
+		.table2{
+			background-color: #E49B0F;
+			border-radius: 10px;
+			height: 170px;
+			width: 800px;
+		}
+
+		img {
+			height: 150px;
+			width: 150px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function tocm(){
+			var x, y
+			x = (document.getElementById('mm').value);
+			y = 0.1
+			alert(x * y)
+
+		}
+
+		function tom(){
+			var x, y
+			x = (document.getElementById('mm').value);
+			y = 0.001
+			alert(x * y)
+		}
+
+		function tokm(){
+			var x, y
+			x = (document.getElementById('mm').value);
+			y = 0.000001
+			alert(x * y)
+		}
+
+		function otherCM(){
+			location.href = "https://www.rapidtables.com/convert/length/cm-to-inch.html"
+		}
+
+		function otherM(){
+			location.href = "https://www.rapidtables.com/convert/length/meter-to-feet.html"
+		}
+
+		function otherKM(){
+			location.href = "https://www.rapidtables.com/convert/length/km-to-mile.html"
+		}
+	</script>
+
+
+<br><br><br>
+
+<center>
+<table>
+	<tr>
+		<td>
+			<center>
+				<h2>Millimeters Converter</h2>
+				<br>
+				<input type="text" id="mm">
+				<br><br>
+				To Centimeters: <span style="color: #EADDCA;">.......</span><input type="button" class="btn btn-info btn-sm active" onclick="tocm()" value="Convert">
+				<br>				
+				To Meters: <span style="color: #EADDCA;">.................</span><input type="button" class="btn btn-info btn-sm active" onclick="tom()" value="Convert">
+				<br>	
+				To Kilometers: <span style="color: #EADDCA;">.........</span><input type="button" class="btn btn-info btn-sm active" onclick="tokm()" value="Convert">
+			</center>
+		</td>
+	</tr>
+</table>
+</center>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand text-light">ConversionWorld.com</a>
+	<ul class="navbar-nav">
+		<li class="nav-item"><a href="#" class="nav-link">Back Home</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Take a Metric Conversions Quiz!</a></li>
+	</ul>
+</nav>
+
+<br><br>
+
+<center>
+<table class="table2">
+	<tr>
+		<td>
+			<center>
+				<h1>ConversionWorld.com</h1>
+				<br>
+				<h4>Other Converters</h4>
+				<input type="button" class="btn btn-light btn-sm active" value="Centimeters Converter" onclick="otherCM()" ><span style="color: #E49B0F;">...</span>				<input type="button" class="btn btn-light btn-sm active" value="Meters Converter" onclick="otherM()" ><span style="color: #E49B0F;">...</span>	<input type="button" class="btn btn-light btn-sm active" value="Kilometers Converter" onclick="otherKM()" >
+			</center>
+		</td>
+	</tr>
+</table>
+</center>
+<br><br><br>
+</body>
+</html>
